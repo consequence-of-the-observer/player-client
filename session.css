@@ -1,0 +1,11 @@
+.die {
+    display:flex;
+}
+
+#dice {
+    display: flex;
+
+    div {
+        margin-left: 10px;
+    }
+}

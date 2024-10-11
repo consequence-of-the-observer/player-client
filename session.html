@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Player Session</title>
+        <script src="js/checkEnvironment.js"></script>
+        <script src="js/dice.js"></script>
+        <script src="js/roll.js"></script>
+        <link rel="stylesheet" href="session.css"/>
+    </head>
+    <body>
+        <h1>Wecome to the Session</h1>
+        <div id="dice">
+            <div>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d4')">-</button>
+                    <p>D4: <b id="d4">0</b></p>
+                    <button onClick="increaseDieCount('d4')">+</button>
+                </div>
+                <br>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d6')">-</button>
+                    <p>D6: <b id="d6">0</b></p>
+                    <button onClick="increaseDieCount('d6')">+</button>
+                </div>
+                <br>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d8')">-</button>
+                    <p>D8: <b id="d8">0</b></p>
+                    <button onClick="increaseDieCount('d8')">+</button>
+                </div>
+                <br>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d10')">-</button>
+                    <p>D10: <b id="d10">0</b></p>
+                    <button onClick="increaseDieCount('d10')">+</button>
+                </div>
+            </div>
+            <div>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d100')">-</button>
+                    <p>D100: <b id="d100">0</b></p>
+                    <button onClick="increaseDieCount('d100')">+</button>
+                </div>
+                <br>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d12')">-</button>
+                    <p>D12: <b id="d12">0</b></p>
+                    <button onClick="increaseDieCount('d12')">+</button>
+                </div>
+                <br>
+                <div class="die">
+                    <button onClick="decreaseDieCount('d20')">-</button>
+                    <p>D20: <b id="d20">0</b></p>
+                    <button onClick="increaseDieCount('d20')">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <b>Notes: </b><input id="reason">
+            <br>
+            <button onClick="rollDice()">Roll Dice</button>
+        </div>
+
+        <div id="roll_tracker">
+            <h1>Your rolls</h1>
+        </div>
+    </body>
+</html>
